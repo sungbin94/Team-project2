@@ -29,12 +29,16 @@ button:hover {
   padding: 0px;
 }
 
-/* management-menu */
+/* main-menu */
 
 .main-menu {
   flex: 1;
   border-right: 2px solid var(--main-color-gre);
   padding-top: 50px;
+}
+
+.main-menu h3 {
+  color: var(--main-color-yel);
 }
 
 .main-menu li {
@@ -56,9 +60,10 @@ button:hover {
 
 .main-menu li a i {
   margin-right: 7px;
+  color: var(--main-color-yel);
 }
 
-/* member-management */
+/* FAQ__title */
 .FAQ__title {
   display: flex;
   flex-direction: column;
