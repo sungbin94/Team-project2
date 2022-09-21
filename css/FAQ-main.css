@@ -2,13 +2,18 @@
 
 /* * {outline:1px solid green;} */
 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .width--800px {
   width: 800px;
 }
 
-h3 {
+/* h3 {
   margin: 0;
-}
+} */
 
 button:hover {
   cursor: pointer;
@@ -20,6 +25,7 @@ button:hover {
   height: 24px;
   background-color: var(--main-color-yel);
   margin-right: 5px;
+  
 }
 
 /* main */
@@ -64,130 +70,161 @@ button:hover {
 }
 
 /* FAQ__title */
-.FAQ__title {
-  display: flex;
+.FAQ__board{
+  /* display: flex; */
   flex-direction: column;
-  align-items: center;
   flex: 5;
   margin-top: 50px;
+  margin-left: 50px;
+
 }
 
-.FAQ__title .FAQmain-title h3 {
+
+.FAQ__board .FAQ-title h3 {
   display: flex;
 }
 
-/* board-log */
-.FAQ__board-log {
+
+/* FAQ-board__list area */
+.FAQ-board__table {
+  font-size: 13px;
   width: 100%;
-  margin-top: 20px;
+  border-top: 1px solid var(--main-color-gre);
+  border-bottom: 1px solid var(--main-color-gre);
+  border-spacing: 0px;
+  margin-top: 10px;
 }
 
-.FAQ__board-log thead tr {
-  background-color: var(--mainBtn-color-gre);
+.FAQ-board__table a {
+  color: #333;
+  display: inline-block;
+  line-height: 1.4;
+  word-break: break-all;
+  vertical-align: middle;
 }
 
-.FAQ__board-log thead tr th {
-  text-align: center;
-  font-size: 13px;
+.FAQ-board__table thead tr{
+  background-color: #e0e0e0;
 }
 
-.FAQ__board-log tbody tr td {
-  text-align: center;
-  font-size: 13px;
-  border-bottom: 1px solid var(--mainBtn-color-gre);
-  padding: 5px 0;
-}
-
-.FAQ__board-log tbody tr .left {
-  text-align: left;
-}
-
-.FAQ__board-log tbody tr td a {
-  display: block;
-}
-
-.FAQ__board-log tbody tr td a:hover {
+.FAQ-board__table a:hover {
   text-decoration: underline;
 }
 
+.FAQ-board__table th {
+  text-align: center;
+}
+
+.FAQ-board__table .th-num {
+  width: 100px;
+  text-align: center;
+}
+
+.FAQ-board__table .th-date {
+  width: 200px;
+}
+
+.FAQ-board__table th,
+.board-table td {
+  padding: 14px 0;
+}
+
+.FAQ-board__table tbody td {
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+
+.FAQ-board__table tbody th {
+  padding-left: 28px;
+  padding-right: 14px;
+  border-top: 1px solid #e7e7e7;
+  text-align: left;
+}
+
 .check__del {
+  border: none;
+  padding-left: 11px;
+  padding-top: 10px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 3px;
+  justify-content: left;
+  align-items: center;
+  font-size: 12px;
 }
 
-.check__del .check__del-all {
-  font-size: 13px;
-  margin-left: 2px;
+
+
+.btn__content {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.check__del .check__del-all label {
-  margin-left: 10px;
-}
-
-.check__del .chk-delete-btn {
+.btn__text {
   background-color: var(--main-color-yel);
-  /* margin:10px 0;
-  border:none;
-  border-radius: 8px;
-  font-weight: bold; */
   width: 60px;
   height: 25px;
   margin: 5px 0 10px 5px;
   border: none;
   border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-/* board__page */
-.board__page {
+.pagination {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
-.board__page--select a {
-  margin: 0 3px;
-  font-size: 13px;
+.pagination li {
+  float: left;
 }
 
-.board__page--select a:hover {
-  background-color: var(--mainBtn-color-gre);
-  border-radius: 5px;
+.pagination li a {
+  padding: 4px;
+  margin-right: 3px;
+  width: 15px;
+  color: #000;
+  font: bold 12px tahoma;
+  text-align: center;
+  text-decoration: none;
 }
 
-/* board__search */
-.board__search {
+/* FAQ-board__search */
+.FAQ-board__search {
   display: flex;
   justify-content: center;
   margin: 15px 0;
 }
 
-.board__search .board__search-box {
+.FAQ-board__search .FAQ-board__search-box {
   display: flex;
 }
 
-.board__search .board__search-box div {
+.FAQ-board__search .FAQ-board__search-box div {
   margin: 0px 3px;
 }
 
-.board__search-box select {
+.FAQ-board__search-box select {
   padding: 5px;
   border-radius: 8px;
-  border: 1px solid var(--mainBtn-color-gre);
+  border: 1px solid var(--main-color-gre);
 }
 
-.board__search-box .board__search-keyword {
-  border: 1px solid var(--mainBtn-color-gre);
+.FAQ-board__search-box .FAQ-board__search-keyword {
+  border: 1px solid var(--main-color-gre);
   border-radius: 8px;
   padding: 1px;
 }
 
-.board__search-box .board__search-keyword input {
+.FAQ-board__search-box .FAQ-board__search-keyword input {
   border: none;
 }
 
-.board__search .board__search-box .board__search-keyword i {
-  color: gray;
+.btn__search {
+  background-color: var(--main-color-gre);
+  cursor: pointer;
+  border: none;
 }
 
 footer{
